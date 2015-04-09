@@ -1,6 +1,9 @@
 ### Yet another off canvas navigation
 Simple and lightweight attempt to imitate the navigations commonly used in a native apps in Android/iOS. 
 
+### Demo
+http://jessetinell.github.io/Off-canvas-menu
+
 ### Dependencies
 hammer.js: http://hammerjs.github.io
 
