@@ -1,0 +1,59 @@
+body.noscroll {
+    overflow: hidden;
+}
+
+.offcanvasmenu {
+    position: fixed;
+    overflow-y: auto;
+    width: 500px;
+    max-width: 85%;
+    left: -105%;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    z-index: 5000;
+    will-change: left;
+}
+
+.nav-animate .offcanvasmenu {
+    transition: left .2s;
+}
+
+
+/* == Drag target == */
+#offcanvas-menu-drag-target {
+    height: 100%;
+    width: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    left: 0;
+    touch-action: pan-y;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav-open #offcanvas-menu-drag-target {
+    right: 0;
+    left: inherit;
+}
+/* == End of Drag target == */
+
+
+/* == Overlay == */
+#nav-overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1200;
+    will-change: opacity;
+}
+
+.nav-animate #nav-overlay {
+    transition: opacity .3s;
+}
+/* == End of Overlay == */

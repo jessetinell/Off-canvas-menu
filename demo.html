@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Offcanvas navigation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/offcanvasmenu.css" />
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+        body {
+            margin: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #333;
+        }
+        
+        .offcanvasmenu {
+            background-color: #ECF0F1;
+        }
+        
+        main {
+            background: #3498db;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 300px 0;
+        }
+        
+        a {
+            color: #333;
+            font-size: 20px;
+            display: block;
+            padding: 11px 40px;
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul a {
+            border-bottom: 1px solid #C7C7C7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="offcanvasmenu">
+        <ul>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <a href="javascript:void(0)" onclick="offcanvasMenu.Toggle()">Open menu</a>
+        <h1>Some</h1>
+        <h1>dummy</h1>
+        <h1>content</h1>
+        <h1>yo</h1>
+    </main>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script src="js/offcanvasmenu.js"></script>
+
+    <script>
+        offcanvasMenu.Init();
+    </script>
+</body>
+
+</html>
